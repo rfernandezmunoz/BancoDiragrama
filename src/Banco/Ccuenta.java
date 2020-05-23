@@ -8,9 +8,15 @@ package Banco;
 public class Ccuenta {
     int iNumerodeCuenta;
     int iSaldo;
-    int[] aiMeses = new int[12];
     String fecha;
-    
+    int idniCliente;
+
+    public Ccuenta(int iNumerodeCuenta, int iSaldo, String fecha, int idniCliente) {
+        this.iNumerodeCuenta = iNumerodeCuenta;
+        this.iSaldo = iSaldo;
+        this.fecha = fecha;
+        this.idniCliente = idniCliente;
+    }
     
     public void ComprobarRetiradaSaldo(int Dinero){
         if(iSaldo > 0){
@@ -21,6 +27,11 @@ public class Ccuenta {
     }
     
     public int MediaUltimosMeses(){
+        int[] aiMeses = new int[12];
+        for(int i=0; i < aiMeses.length; i++){
+            aiMeses[i] = (int) Math.random();
+        }
+        
         int iSueldoTotal = 0, iSueldoMedio = 0;
         for(int i = 0; i < aiMeses.length; i++){
             iSueldoTotal = iSueldoTotal + aiMeses[i];
