@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * En esta clase lo que se haran seran las pruebas para la clase Ccliente.
  * @author Roberto
  * @version 1.0
  */
@@ -13,7 +13,9 @@ public class CclienteTest {
     Ccliente Cliente1 = new Ccliente(0001, 654789214, 20, "Manuel", "Carvallo");
     
     /**
-     * Test of getIdni method, of class Ccliente.
+     * Se ha creado un constructor anteriormente y lo que vamos a ver que se recogen bien los datos, Segun el valor que nos de si 
+     * es igual o no nos saldra un mensaje por pantalla indicandolo.
+     * @Test GetIdni
      */
     @Test
     public void testGetIdni() {
@@ -27,7 +29,8 @@ public class CclienteTest {
     }
 
     /**
-     * Test of setIdni method, of class Ccliente.
+     * Indicamos un valor a la variable idni y ejecutamos el metodo setIdni para ver si se modifica en el Cliente1.
+     * @Test SetIdni
      */
     @Test
     public void testSetIdni() {
@@ -37,7 +40,9 @@ public class CclienteTest {
     }
 
     /**
-     * Test of getiTelefono method, of class Ccliente.
+     * En este test lo que haremos sera si el telefono que le hemos pasado por el siguiente testSetiTelefono es igual que al del
+     * Cliente1.
+     * @Test GetiTelefono
      */
     @Test
     public void testGetiTelefono() {
@@ -51,7 +56,9 @@ public class CclienteTest {
     }
 
     /**
-     * Test of setiTelefono method, of class Ccliente.
+     * En este test lo que haremos sera pasar un valor a la variable iTelefono, lo que haremos sera comprobar que la longitud del
+     * telefono es valida para que pase a ejecutar el metodo setiTelefono.
+     * @Test setiTelefono
      */
     @Test
     public void testSetiTelefono() {
@@ -65,7 +72,8 @@ public class CclienteTest {
     }
 
     /**
-     * Test of getiEdad method, of class Ccliente.
+     * Vamos a comprobar en este test si la edad que hemos recogido con el metodo getiEdad es igual al que tiene el Cliente1.
+     * @Test GetiEdad
      */
     @Test
     public void testGetiEdad() {
@@ -79,13 +87,15 @@ public class CclienteTest {
     }
 
     /**
-     * Test of setiEdad method, of class Ccliente.
+     * En este test lo que vamos a comprobar es si la edad que le estamos indicando es mayor que 17 años, esto lo haremos porque
+     * si es menor de edad no puede ser cliente.
+     * @Test SetiEdad
      */
     @Test
     public void testSetiEdad() {
         int iEdad = 40;
         Cliente1.setiEdad(iEdad);
-        if(iEdad > 0){
+        if(iEdad > 17){
             System.out.println("EDAD --> El valor introducido para la EDAD es mayor a 0 y es valido");
         }else{
             System.out.println("EDAD --> El valor introducido para la EDAD no es mayor a 0 por lo tanto no es valido");
@@ -93,7 +103,8 @@ public class CclienteTest {
     }
 
     /**
-     * Test of getsNombre method, of class Ccliente.
+     * En este test lo que haremos sera comprobar si el nombre es igual que el del Cliente1.
+     * @Test GetsNombre
      */
     @Test
     public void testGetsNombre() {
@@ -107,7 +118,8 @@ public class CclienteTest {
     }
 
     /**
-     * Test of setsNombre method, of class Ccliente.
+     * En este test lo que haremos sera pasarle un valor por a la variable sNombre y va a ejecutar el metodo setsNombre.
+     * @Test setsNombre
      */
     @Test
     public void testSetsNombre() {
@@ -116,7 +128,8 @@ public class CclienteTest {
     }
 
     /**
-     * Test of getsApellido method, of class Ccliente.
+     * En este test lo que haremos sera comprobar si el nombre es igual que el del Cliente1.
+     * @Test GetsApellido
      */
     @Test
     public void testGetsApellido() {
@@ -130,7 +143,8 @@ public class CclienteTest {
     }
 
     /**
-     * Test of setsApellido method, of class Ccliente.
+     * En este test lo que haremos sera pasarle un valor por a la variable sApellido y va a ejecutar el metodo setsApellido.
+     * @Test setsApellido
      */
     @Test
     public void testSetsApellido() {
@@ -139,7 +153,8 @@ public class CclienteTest {
     }
 
     /**
-     * Test of VerPerfil method, of class Ccliente.
+     * En este test lo que haremos sera comprobar si se imprime bien por pantalla todos los valores del Cliente 1.
+     * @Test VerPerfil
      */
     @Test
     public void testVerPerfil() {

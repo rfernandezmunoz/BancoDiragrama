@@ -4,14 +4,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * En esta clase lo que se haran seran las pruebas para la clase Cgestor.
  * @author Roberto
  * @version 1.0
  */
 public class CgestorTest {
     
     /**
-     * Test of ComprobarUsuario method, of class Cgestor.
+     * Le pasaremos un valor por parametro al metodo ComprobarUsuario, y nos saldra un mensaje indicando si existia ese usuario o no.
+     * @Test ComprobarUsuario
      */
     @Test
     public void testComprobarUsuario() {
@@ -22,7 +23,8 @@ public class CgestorTest {
     }
 
     /**
-     * Test of CrearUsuario method, of class Cgestor.
+     * En este test lo que vamos a hacer sera indicar una serie de variables para pasarlas por parametro y que cree el cliente.
+     * @Test CrearUsuario
      */
     @Test
     public void testCrearUsuario() {
@@ -37,7 +39,9 @@ public class CgestorTest {
     }
 
     /**
-     * Test of ModificarUsuario method, of class Cgestor.
+     * En este test lo que vamos a hacer sera indicar una serie de variables para pasarlas por parametro y que modifique los valores
+     * del cliente existente si son distintos.
+     * @Test ModificarUsuario
      */
     @Test
     public void testModificarUsuario() {

@@ -4,14 +4,18 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * En este test lo que haremos sera hacer una serie de comprobaciones de los metodos de la clase de Ccuenta, vamos a crear un objeto
+ * llamado Cuenta1.
  * @author Roberto
+ * @version 1.0
  */
 public class CcuentaTest {
     Ccuenta Cuenta1 = new Ccuenta(101, 2820, "20/05/2020", 1);
     
     /**
-     * Test of ComprobarRetiradaSaldo method, of class Ccuenta.
+     * En este test lo que haremos sera comprobar si se puede retirar el dinero y si se ha retirado correctamente o no, segun estos 
+     * casos se pasaran unos mensajes por pantalla indicando si se ha ejecutado correctamente o no, o si no hay saldo para quitar.
+     * @test ComprobarRetiradaSaldo
      */
     @Test
     public void testComprobarRetiradaSaldo() {
@@ -29,7 +33,8 @@ public class CcuentaTest {
     }
 
     /**
-     * Test of MediaUltimosMeses method, of class Ccuenta.
+     * En este test lo que haremos sera saber si nos da bien la Media del ultimo año.
+     * @test MediaUltimosMeses
      */
     @Test
     public void testMediaUltimosMeses() {
@@ -43,7 +48,8 @@ public class CcuentaTest {
     }
 
     /**
-     * Test of IngresarDinero method, of class Ccuenta.
+     * En este test podremos ver si se ha realizado bien la operacion de ingresar.
+     * @test IngresarDinero
      */
     @Test
     public void testIngresarDinero() {
@@ -58,7 +64,8 @@ public class CcuentaTest {
     }
 
     /**
-     * Test of RetirarDinero method, of class Ccuenta.
+     * En este test podremos ver si se ha realizado bien la operacion de retirar.
+     * @test RetirarDinero
      */
     @Test
     public void testRetirarDinero() {
