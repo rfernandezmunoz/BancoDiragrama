@@ -20,7 +20,7 @@ public class Cgestor {
     
     public void CrearUsuario(int iDniCliente, int iTelefonoCliente, int iEdadCliente, String sNombreCliente, String sApellidoCliente){
         Ccliente Cliente2 = new Ccliente(iDniCliente, iTelefonoCliente, iEdadCliente, sNombreCliente, sApellidoCliente);
-        
+        System.out.println("Crear --> Se ha creado el cliente 2 correctamente.");
     }
     
     public void ModificarUsuario(int iDniCliente, int iTelefonoCliente, int iEdadCliente, String sNombreCliente, String sApellidoCliente){
@@ -44,5 +44,6 @@ public class Cgestor {
             Ccliente.Cliente1.setsApellido(sApellidoCliente);
             System.out.println("Se ha modificado el Apellido del cliente");
         }
+        System.out.println("Modificar --> Se modificado el cliente 1 correctamente.");
     }    
 }

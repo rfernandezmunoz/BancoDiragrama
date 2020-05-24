@@ -11,6 +11,8 @@ public class Ccuenta {
     String fecha;
     int idniCliente;
 
+    public static Ccuenta Cuenta1 = new Ccuenta(101, 2820, "20/05/2020", Ccliente.Cliente1.getIdni());
+    
     public Ccuenta(int iNumerodeCuenta, int iSaldo, String fecha, int idniCliente) {
         this.iNumerodeCuenta = iNumerodeCuenta;
         this.iSaldo = iSaldo;
