@@ -10,6 +10,8 @@ public class Ccliente {
     int idni, iTelefono, iEdad;
     String sNombre, sApellido;
     
+    public static Ccliente Cliente1 = new Ccliente(0001, 654789214, 20, "Manuel", "Carvallo");
+    
     public Ccliente(int idni, int iTelefono, int iEdad, String sNombre, String sApellido) {
         this.idni = idni;
         this.iTelefono = iTelefono;
